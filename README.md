@@ -10,7 +10,7 @@ College admissions have become increasingly competitive in the last few years an
 ## Document Creation
 The App Checker App has the following information on thousands of colleges: official college name, shortened college names, college abbreviations, team name(s), website, and location. All of this data is combined in [collegeDataset.csv](https://github.com/egoldman15/The-App-Checker-App/blob/master/document-creation/collegeDataset.csv). The other documents in document-creation have individual information.
 
-The csv files are not organized in columns because the program gets the college info from the full college name (first item). This means that the redudancies in some rows are acceptable.
+The csv files are not organized in columns because the program gets the college info from the full college name (the first item in every row). Some rows have more columns than others because some colleges have more nicknames, teams, etc. than others.
 
 ### Running Document Creation Files
 All documents can be created at once using `bigDataset.py`. You should run that file in sections by commenting out parts.
