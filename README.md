@@ -20,7 +20,7 @@ Examples:
 - Output files may contain blank items.
 - College URLs may be in an incorrect format. This is important to fix because the best way to match college information is by its URL.
 
-*Note: References to mascots in the documents should really be team names*
+*Note: References to mascots in the documents should really be team names.*
 
 ### Data sources
 - [List of colleges](https://github.com/endSly/world-universities-csv)
