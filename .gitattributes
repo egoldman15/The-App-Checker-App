@@ -1,0 +1,6 @@
+app/static/bloodhound.js linguist-vendored
+app/static/bloodhound.min.js linguist-vendored
+app/static/typeahead.bundle.js linguist-vendored
+app/static/typeahead.bundle.min.js linguist-vendored
+app/static/typeahead.jquery.js linguist-vendored
+app/static/typeahead.jquery.min.js linguist-vendored
