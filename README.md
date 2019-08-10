@@ -1,6 +1,5 @@
 <div align="center"><img src="images/logo.png" alt="The App Checker App"></div>
 
-## The App Checker App
 The App Checker App is a college essay checker that identifies the instances where you reference the college you're applying to and instances where you reference other colleges in order for you to make sure that you are always talking about the correct college.
 
 ## What is the purpose?
