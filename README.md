@@ -18,7 +18,7 @@ Individual documents can be created with the other files.
 - [List of colleges](https://github.com/endSly/world-universities-csv)
 - [College abbreviations](https://en.wikipedia.org/wiki/List_of_colloquial_names_for_universities_and_colleges_in_the_United_States)
 - [Team names](https://en.wikipedia.org/wiki/List_of_college_team_nicknames_in_the_United_States)
-The Wikipedia articles were used as lists and most of the information came from each college's page.
+- The Wikipedia articles were used as lists and most of the information came from each college's page.
 
 
 ## Repos Used
