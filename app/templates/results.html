@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>The App Checker App | {{title}} Essay Checker</title>
+</head>
+<body>
+
+<h1>The Redirected Page</h1>
+
+{% for file, text in fileList.items() %}
+    <h1>{{file}}:</h1>
+    {% autoescape false %}
+        <p>{{text}}</p>
+    {% endautoescape %}
+{% endfor %}
+
+</body>
+</html>

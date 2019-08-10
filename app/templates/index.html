@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask-Dropzone Demo</title>
+    {{ dropzone.load_css() }}
+    {{ dropzone.style('margin: 10px 0 10px; min-height: 400px; height: 200px') }}
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/static/bloodhound.js"></script>
+    <script src="/static/bloodhound.min.js"></script>
+    <script src="/static/typeahead.bundle.js"></script>
+    <script src="/static/typeahead.bundle.min.js"></script>
+    <script src="/static/typeahead.jquery.js"></script>
+    <script src="/static/typeahead.jquery.min.js"></script>
+    <script src="/static/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="prefetch">
+    <form action="{{ url_for('handle_form') }}" enctype="multipart/form-data" method="post" id="myForm">
+        <input class="typeahead form-control" id="selector" name="selector" type="text" placeholder="Colleges">
+    </form>
+</div>
+
+{{ dropzone.create('/') }}
+<button id="upload-btn">Upload</button>
+
+{{ dropzone.load_js() }}
+<!-- {{ dropzone.config(custom_init='dz = this; $("#upload-btn").click(function() { if (dz.getQueuedFiles().length < 1){alert("Please upload a file");} if ($("#selector").val().length != 0){dz.processQueue(); $("#selector").submit();} else if (dz.getQueuedFiles().length >= 1){ alert("Please select a college.") }}); dz.on("successmultiple", function(file) { window.location.href="/completed"})',
+                      custom_options='autoProcessQueue: false, addRemoveLinks: true,') }} -->
+
+<!-- {{ dropzone.config(custom_init='dz = this; $("#upload-btn").click(function() { if (dz.getQueuedFiles().length < 1){alert("Please upload a file");} if ($("#selector").val().length > 0){dz.processQueue(); $("#myForm").submit(); alert("submit");} else if (dz.getQueuedFiles().length >= 1){ alert("Please select a college.") }}); dz.on("successmultiple", function(file) { window.location.href="/completed"})',
+                    custom_options='autoProcessQueue: false, addRemoveLinks: true,') }} -->
+
+{{ dropzone.config(custom_init='
+dz = this;
+$("#upload-btn").click(function() {
+  if (dz.getQueuedFiles().length < 1){
+    alert("Please upload a file");
+    }
+  else if ($("#selector").val().length == 0){
+    alert("Please select a college.")
+    }
+  else {
+
+    $("#myForm").submit();
+    dz.processQueue();
+    }
+  });
+  dz.on("successmultiple", function(file) {
+    window.location.href="/completed"
+  });  // custom init code
+',
+custom_options='autoProcessQueue: false, addRemoveLinks: true, parallelUploads: 10') }}
+</body>
+</html>
