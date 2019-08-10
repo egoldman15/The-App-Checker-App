@@ -8,7 +8,7 @@ College admissions have become increasingly competitive in the last few years an
 <div align="center"><img src="images/FakeWhyEssay3.png" alt="The App Checker App" width="400px"></div>
 
 ## Document Creation
-The App Checker App has the following information on thousands of colleges: official college name, shortened college names, college abbreviations, team name(s), website, and location. All of this data is combined in [collegeDataset.csv](https://github.com/egoldman15/The-App-Checker-App/blob/master/document-creation/collegeDataset.csv). The other documents in document-creation have individual information.
+The App Checker App has the following information on thousands of colleges: official college name, shortened college names, college abbreviations, team name(s), website, and location. All of this data is combined in [collegeDataset.csv](https://github.com/egoldman15/The-App-Checker-App/blob/master/document-creation/collegeDataset.csv). The other documents in `document-creation` have individual information.
 
 The csv files are not organized in columns because the program gets the college info from the full college name (the first item in every row). Some rows have more columns than others because some colleges have more nicknames, teams, etc. than others.
 
@@ -22,7 +22,7 @@ Examples:
 - Output files may contain blank items.
 - College URLs may be in an incorrect format. This is important to fix because the best way to match college information is by its URL.
 
-*Note: References to mascots in the documents should really be team names.*
+*Note: References to "mascots" in the documents should really be "team names".*
 
 ### Data sources
 - [List of colleges](https://github.com/endSly/world-universities-csv)
