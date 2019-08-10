@@ -30,6 +30,7 @@ app.config.update(
 
 dropzone = Dropzone(app)
 
+# Read documents. The output of the documents is escaped with cgi.escape to prevent XSS. cgi.escape is used instead of flask.escape because flask.escape creates an HTML-safe object.
 def readFile(filepath):
     extension = filepath.split('.')[1]
     file = filepath.split('.')[0]
@@ -59,6 +60,7 @@ def highlight(essay, collegeInfo):
     redChecked = []
     for row in collegeData:
       for item in row:
+        # Checks for info about wrong colleges. The not any() function checks if the wrong info is inside the right info (i.e. Georgia in Georgia Tech shouldn't be red)
         if (item not in collegeInfo) and (item not in checked) and (not any(item in s for s in collegeInfo)):
             notInfo.append(item)
 
@@ -66,6 +68,7 @@ def highlight(essay, collegeInfo):
         if item not in redChecked:
             essay = essay.replace(item, '<span style="background-color: #FD6164">' + item + '</span>')
             redChecked.append(item)
+            # Check for singular form of team name. Wolverines --> Wolverine
             if item[-1] == "s" and item[0:-1] not in checked and (not any(item[0:-1] in s for s in collegeInfo)):
                 essay = essay.replace(item[0:-1], '<span style="background-color: #FD6164">' + item[0:-1] + '</span>')
 
