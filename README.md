@@ -29,7 +29,7 @@ Examples:
 - The Wikipedia articles were used as lists and most of the information came from each college's page.
 
 ## The Application
-The App Checker App runs on a flask server. To run, install the modules in `requirements.txt` and follow the instructions for [installing redislite](https://github.com/yahoo/redislite#requirements). The application in the repo is the same as the one running on the full site, but without the styling.
+The App Checker App runs on a flask server. To run, install the modules in `requirements.txt` and follow the instructions for [installing Redislite](https://github.com/yahoo/redislite#requirements). The application in the repo is the same as the one running on the full site, but without the styling.
 
 
 ## Repos Used
