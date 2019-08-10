@@ -20,6 +20,9 @@ Individual documents can be created with the other files.
 - [Team names](https://en.wikipedia.org/wiki/List_of_college_team_nicknames_in_the_United_States)
 - The Wikipedia articles were used as lists and most of the information came from each college's page.
 
+## The Application
+The App Checker App runs on a flask server. To run, install the modules in requirements.txt and follow the instructions for [installing redislite](https://github.com/yahoo/redislite). The application in the repo is the same as the one running on the full site, but without the styling.
+
 
 ## Repos Used
  - [typeahead.js](https://github.com/twitter/typeahead.js/)
