@@ -12,7 +12,15 @@ The App Checker App has the following information on thousands of colleges: offi
 
 ### Running Document Creation Files
 All documents can be created at once using `bigDataset.py`. You should run that file in sections by commenting out parts.
-Individual documents can be created with the other files.
+Individual documents can be created with the other files. The csv files in document-creation have been manually corrected, but the files that will output from the python files will contain some errors.
+
+Examples:
+- Some locations gathered from `createTeamNameDataset.py` will be too specific (exact addreses) or too broad (multiple cities/counties). These instances are appended to `manualCheck.txt`.
+- Output files may contain misplaced quotation marks that need to be fixed.
+- Output files may contain blank items.
+- College URLs may be in an incorrect format. This is important to fix because the best way to match college information is by its URL.
+
+*Note: References to mascots in the documents should really be team names*
 
 ### Data sources
 - [List of colleges](https://github.com/endSly/world-universities-csv)
