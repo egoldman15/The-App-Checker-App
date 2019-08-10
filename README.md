@@ -1,3 +1,3 @@
-<img src="images/logo.png" alt="The App Checker App" height=200 width=auto align="middle">
+<img src="images/logo.png" alt="The App Checker App">
 # The App Checker App
 College Essay Checker
