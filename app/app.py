@@ -108,6 +108,7 @@ def upload():
         redis_connection.hmset('fileList', fileList)
     else:
         fileList = {}
+    # Delete folder where essay was saved
     rmtree(tempdir)
     return render_template('index.html')
 
