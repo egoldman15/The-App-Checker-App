@@ -6,6 +6,6 @@ Flask==1.1.1
 Flask-Dropzone==1.5.4
 
 
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 
 redislite==5.0.142319
