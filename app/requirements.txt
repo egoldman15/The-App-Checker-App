@@ -1,7 +1,7 @@
 docx2txt==0.8
 
 
-Flask==1.1.1
+Flask==2.3.2
 
 Flask-Dropzone==1.5.4
 
